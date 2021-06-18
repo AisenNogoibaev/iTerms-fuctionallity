@@ -32,11 +32,11 @@ export const CustomInput = styled(Input)`
 		color: #dadfeb;
 	}
 `
-export const TextField = ({ label, type, placeholder, value, onChange }) => {
+export const TextField = ({ label, type, placeholder, value, onChange,readonly,onFocus }) => {
 	return (
 		<div className='textfield'>
 			<Label htmlFor='Your Name'>{label}</Label>
-			<CustomInput type={type} name='' id='' placeholder={placeholder} value={value} onChange={onChange}/>
+			<CustomInput type={type} name='' id='' placeholder={placeholder} value={value} onChange={onChange} readOnly={readonly} onFocus={onFocus}/>
 		</div>
 	)
 }

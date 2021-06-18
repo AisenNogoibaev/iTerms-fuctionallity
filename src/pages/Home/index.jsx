@@ -17,6 +17,8 @@ import slash from "../../images/slash.png";
 import privacy_sln from "../../images/privacy-sln.png";
 import feedback_ph2 from "../../images/feedback-stars.png";
 import group2 from "../../images/group1.png";
+
+
 // components
 import { ServiceBoard } from "../../components/ServiceBoard";
 import { DiscoverComp } from "../../components/DicsoverComponent";

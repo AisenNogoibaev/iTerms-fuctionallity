@@ -13,9 +13,20 @@ import { Login } from './pages/Login'
 import { SignUp } from './pages/SignUp'
 import { Home } from './pages/Home'
 import { useSelector } from 'react-redux'
+import { useEffect } from 'react'
 
 function App() {
-	const state = useSelector((state) => state)
+	const state = useSelector(state => state)
+	const currentUser = useSelector(state => state.currentUser)
+
+	useEffect(() => {
+		localStorage.setItem('users', JSON.stringify(state))
+	},[])
+
+	useEffect(() => {
+			localStorage.setItem('users', JSON.stringify(state))
+	}, [currentUser])
+
 	return (
 		<div className='App'>
 			<BrowserRouter>
